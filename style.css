@@ -236,10 +236,6 @@ a {
 }
 
 @media (max-width: 750px) {
-  i {
-    font-size: 2.4rem;
-    margin: auto 1rem;
-  }
 
   #intro > p {
     width: 80%;
