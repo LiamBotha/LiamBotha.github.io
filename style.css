@@ -247,9 +247,4 @@ a {
     white-space: nowrap;
     width: 1px;
   }
-  
-  :root {
-    --font-medium: 1.2rem;
-    --font-large: 1.6rem;
-  }
 }
