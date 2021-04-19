@@ -11,6 +11,7 @@ html, body {
   
   --font-medium: 1.5rem;
   --font-large: 2rem;
+  --font-xlarge: 3rem;
 }
 
 a {
@@ -48,12 +49,12 @@ a {
   background-color: #3a3d40;
   background: linear-gradient(0deg, #111517 20%, rgb(90, 90, 90));
   color: var(--secondary);
-  font-size: 3rem;
   text-align: center;
 }
 
 #intro > h1 {
   margin: 0.2rem 0.2rem 2rem 0.2rem;
+  font-size: var(--font-xlarge);
 }
 
 #intro > h2 {
@@ -100,13 +101,13 @@ a {
 #projects {
   text-align: center;
   padding: 0.1rem 2rem;
-  font-size: 1.5rem;
   background: var(--secondary);
   color: var(--primary);
 }
 
 #projects > h2 {
   margin-top: 3rem;
+  font-size: 2rem;
 }
 
 #project-cards {
@@ -124,7 +125,8 @@ a {
   background: #303841;
   border: 3px solid rgba(0,0,0,1);
   /* box-shadow: 0px 0px 5px 1px black; */
-  font-weight: 700;
+  font-size: 1.5rem;
+  font-weight: 600;
   color: var(--secondary);
 }
 
@@ -239,6 +241,10 @@ a {
     margin: auto 1rem;
   }
 
+  #intro > p {
+    width: 80%;
+  }
+
   .link-text {
     clip: rect(1px, 1px, 1px, 1px);
     height: 1px;
@@ -246,5 +252,11 @@ a {
     position: absolute;
     white-space: nowrap;
     width: 1px;
+  }
+  
+  :root {
+    --font-medium: 1rem;
+    --font-large: 1.5rem;
+    --font-xlarge: 2.7rem;
   }
 }
