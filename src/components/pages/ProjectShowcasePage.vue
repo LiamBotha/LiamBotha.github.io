@@ -11,7 +11,7 @@ const projectStore = GetAllProjects();
     <v-card
         flat
         variant="text"
-        class="pb-10 d-flex flex-column flex-fill align-center justify-items-center">
+        class="">
 
         <v-card-title class="text-md-h5 pa-2">Some personal projects I've worked on</v-card-title>
 
@@ -28,7 +28,7 @@ const projectStore = GetAllProjects();
                 elevation="10"
                 rounded="0">
                 <v-img
-                    :src="'/project images/' + project.images[0]"
+                    :src="'/public/project images/' + project.images[0]"
                     class="position-absolute left-0 right-0 bottom-0"
                     height="100%" cover
                 />

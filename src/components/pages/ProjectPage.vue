@@ -40,8 +40,8 @@ watch(useRoute(), (route) => {
                 >
                 <v-row no-gutters>
                     <v-col v-for="n in project.images.length / 2">
-                        <v-img :src="'/project images/'+ project.images[(n - 1) * 2]" class="ma-1" cover max-height="" />
-                        <v-img :src="'/project images/'+ project.images[(n) * 2 - 1]" class="ma-1" cover max-height="" />
+                        <v-img :src="'/public/project images/'+ project.images[(n - 1) * 2]" class="ma-1" cover max-height="" />
+                        <v-img :src="'/public/project images/'+ project.images[(n) * 2 - 1]" class="ma-1" cover max-height="" />
                     </v-col>
                 </v-row>
             </v-card>
