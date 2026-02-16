@@ -64,13 +64,14 @@ watch(useDisplay({mobileBreakpoint:'md'}).mobile, (bIsMobile) => {
                     <RouterView name="sidebar" class="overflow-y-scroll fill-height pa-2" maxHeight="98vh"/>
                 </v-col>
 
-                <v-col id="content" maxHeight="10vh" class="position-relative pa-2 ml-md-1 rounded-lg">
-                    <v-container maxHeight="97vh" class="d-flex flex-fill flex-column pa-0 ma-0 ga-0">
-                        <PageTabComponent :tabs="tabs" class="text-white"/>
-                        <v-divider/>
-                        <RouterView class="overflow-y-auto"/>
-                        <ContactInfoComponent class="position-absolute bottom-0 left-0"/>
+                <v-col id="content" class="d-flex flex-column ml-md-1 rounded-lg">
+                    <PageTabComponent :tabs="tabs" class="text-white"/>
+                    <v-divider/>
+                    <v-container id="content-scrollable" fluid class="fill-height overflow-y-scroll">
+                        <RouterView width="100%"/>
                     </v-container>
+                    <v-divider/>
+                    <ContactInfoComponent/>
                 </v-col>
             </v-row>
         </v-main>
@@ -79,11 +80,16 @@ watch(useDisplay({mobileBreakpoint:'md'}).mobile, (bIsMobile) => {
 
 <style>
  #content, #sidebar {
-     background-color: #101318;
+     background-color: #1b1e20;
      scrollbar-color: #2db889 transparent;
+     max-height: 99vh;
+ }
+
+ #content-scrollable {
+     background-color: #191a1c;
  }
 
  html{
-     overflow: hidden;
+
  }
 </style>

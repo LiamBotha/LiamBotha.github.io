@@ -11,7 +11,12 @@ const projects: Project[] = [
         id: 'fur',
         title: 'Fur 2D',
         tags: ['Game', 'Platformer', 'Vector Art'],
-        images: ['fur01.png', 'fur02.png', 'fur03.png', 'fur04.png'],
+        images: [
+            'fur01.png',
+            'fur02.png',
+            'fur03.png',
+            'fur04.png'
+        ],
         description: [ 'This is my first attempt at making a game while I was in University. My focus was on creating a simple platformer built around the concept of the player being able to teleport. ',
             'The code is very simple using basic Unity concepts, such as instantiating objects to handle the projectiles and bullets. Whenever the player teleports, it sets the player’s position to where they need to teleport. The game also makes use of singletons to make sure that the players health stays consistent between scenes and to track stats in the Game Manager'
         ],
@@ -20,7 +25,12 @@ const projects: Project[] = [
         id: 'silt',
         title: 'Silt 2D',
         tags: ['Game', 'Platformer', 'Pixel Art'],
-        images: ['Silt01.png', 'Silt02.png', 'Silt03.png', 'Silt04.png'],
+        images: [
+            'Silt01.png',
+            'Silt02.png',
+            'Silt03.png',
+            'Silt04.png'
+        ],
         description: [ 'A platformer designed with a focus on fluid and satisfying controls and movement. The game gives the player the ability to wall jump which could allow for more complex challenges for the player and more interesting levels.',
             'This was a personal project to see if I could make a platformer with a satisfying core gameplay loop. The project focused purely on the mechanics and has very basic visuals. The game doesn’t use Unity’s default gravity as it makes some mechanics feel floaty. So I manually set the player’s gravity which allowed me to decrease it while on a wall, or increase it the longer the player is in the air to create a smooth jump.',
         ],

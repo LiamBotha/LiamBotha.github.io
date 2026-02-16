@@ -28,7 +28,7 @@ const projectStore = GetAllProjects();
                 elevation="10"
                 rounded="0">
                 <v-img
-                    :src="'/public/project images/' + project.images[0]"
+                    :src="'/project images/' + project.images[0]"
                     class="position-absolute left-0 right-0 bottom-0"
                     height="100%" cover
                 />
