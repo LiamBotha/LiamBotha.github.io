@@ -88,8 +88,4 @@ watch(useDisplay({mobileBreakpoint:'md'}).mobile, (bIsMobile) => {
  #content-scrollable {
      background-color: #191a1c;
  }
-
- html{
-
- }
 </style>

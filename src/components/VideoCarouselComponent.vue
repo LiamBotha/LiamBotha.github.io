@@ -28,7 +28,7 @@ const videos: string[] = [
         <v-responsive :aspectRatio="useDisplay({mobileBreakpoint:'sm'}).mobile.value ? 4/3 : 16/9">
             <v-window class="fill-height" show-arrows continuous>
                 <v-window-item class="fill-height bg-black" v-for="path in videos">
-                    <iframe :src="path" width="100%" height="100%" class="border-0"/>
+                    <iframe :src="path" width="100%" height="100%" class="border-0" allowfullscreen/>
                 </v-window-item>
             </v-window>
         </v-responsive>

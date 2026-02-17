@@ -11,13 +11,13 @@ const projectStore = GetAllProjects();
     <v-card
         flat
         variant="text"
-        class="">
+        class="align-self-start">
 
-        <v-card-title class="text-md-h5 pa-2">Some personal projects I've worked on</v-card-title>
+        <div class="text-md-h5 pb-5">Some personal projects I've worked on</div>
 
         <v-row
             justify="center"
-            class="fill-height mt-auto">
+            class="fill-height">
             <v-card
                 v-for="project in projectStore"
                 :to="'/projects/' + project.id"
