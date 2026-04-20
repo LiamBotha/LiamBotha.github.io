@@ -13,6 +13,10 @@ const tabs = ref([
         name: "Projects",
         href: "/projects",
     },
+    {
+        name: "Web",
+        href: "/web-projects",
+    },
 ])
 
 if(useDisplay({mobileBreakpoint:'md'}).mobile.value)
@@ -46,6 +50,10 @@ watch(useDisplay({mobileBreakpoint:'md'}).mobile, (bIsMobile) => {
             {
                 name: "Projects",
                 href: "/projects",
+            },
+            {
+                name: "Web",
+                href: "/web-projects",
             },
         ]
 })

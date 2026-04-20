@@ -1,6 +1,9 @@
 // Routing
 import {createRouter, createWebHashHistory} from "vue-router"
 
+import ProjectShowcasePage from "./components/pages/ProjectShowcasePage.vue";
+import ProjectListView from "./components/sidebars/ProjectListView.vue";
+
 const routes = [
     {
         path: '',
@@ -15,8 +18,8 @@ const routes = [
             {
                 path: '',
                 components: {
-                    default: () => import('./components/pages/ProjectShowcasePage.vue'),
-                    sidebar: () => import('./components/sidebars/ProjectListView.vue'),
+                    default: ProjectShowcasePage, // breaks on GitHub pages if lazy loaded
+                    sidebar: ProjectListView,
                 },
             },
             {
@@ -32,6 +35,13 @@ const routes = [
         path: '/skills',
         components: {
             default: () => import('./components/sidebars/SkillListView.vue'),
+            sidebar: () => import('./components/sidebars/SkillListView.vue'),
+        },
+    },
+    {
+        path: '/web-projects',
+        components: {
+            default: () => import('./components/pages/WebsiteShowcasePage.vue'),
             sidebar: () => import('./components/sidebars/SkillListView.vue'),
         },
     },

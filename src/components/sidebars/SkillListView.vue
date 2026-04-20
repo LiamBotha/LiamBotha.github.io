@@ -22,6 +22,8 @@ const skillsGroups = [
         items: [
             "Vue.js",
             "Vuetify",
+            "React",
+            "D3.js"
         ]
     },
     {
