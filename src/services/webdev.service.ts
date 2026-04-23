@@ -10,6 +10,13 @@ const websites = [
         link: 'https://liambotha.github.io/react-memory-game/',
         tags: ['React', 'CSS'],
         icon: '/project images/ReactMemoryGame.png'
+    },
+    {
+
+        title: 'Javascript Calculator',
+        link: 'https://liambotha.github.io/javascript-calculator/',
+        tags: ['Javascript', 'CSS', 'Html'],
+        icon: '/project images/JsCalculator.png'
     }
 ]
 
